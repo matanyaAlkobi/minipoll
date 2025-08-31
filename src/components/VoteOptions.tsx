@@ -11,9 +11,9 @@ export default function VoteOptions({
   fn,
 }: TryProps) {
   return (
-    <div>
+    <div  className="vote-options">
       {Object.entries(numberOfVotes).map(([option, votes]) => (
-        <div key={option}>
+        <div key={option} className="vote-option">
           <button onClick={() => fn(option)}>{option}</button>
           {showResults && (
             <p>

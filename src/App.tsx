@@ -19,13 +19,14 @@ function App() {
 
   return (
     <>
-      <section className="">
+      <section className="app-container">
+        <h1>Vote for your favorite framework!</h1>
         <VoteOptions numberOfVotes={numberOfVotes} showResults={showResults} fn={handleVote}/>
 
       </section>
 
 
-      <button onClick={() => setShowResults((prev) => !prev)}>
+      <button className="toggle-button" onClick={() => setShowResults((prev) => !prev)}>
         {showResults ? "Hide Results" : "Show Results"}
       </button>
     </>
