@@ -23,7 +23,11 @@ h1 {
   color: black;
 }
 
-.toggle-button {
+.container-functional-buttons{
+  display: flex;
+  gap: 10px;
+}
+.functional-buttons {
   margin-top: 1.5rem;
   padding: 10px 20px;
   background-color: #4f46e5;
@@ -35,7 +39,7 @@ h1 {
   transition: background-color 0.3s;
 }
 
-.toggle-button:hover {
+.functional-buttons:hover {
   background-color: #4338ca;
 }
 
@@ -82,3 +86,4 @@ h1 {
   font-weight: bold;
   color: #374151;
 }
+
